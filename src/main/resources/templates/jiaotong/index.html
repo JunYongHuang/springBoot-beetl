@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,user-scalable=no,target-densitydpi=device-dpi, viewport-fit=cover">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/> -->
+    <title>2022年交通银行信用卡年度账单</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="${doMain}css/reset.css">
+    <link rel="stylesheet" href="${doMain}css/animate.min.css">
+    <link rel="stylesheet" href="${doMain}css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="${doMain}css/style.css?t=2022120502">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script src="${doMain}js/jquery-3.6.0.min.js"></script>
+    <script src="${doMain}js/swiper-bundle.min.js"></script>
+    <script src="${doMain}js/swiper.animate1.0.3.min.js"></script>
+    <style>
+/* .img-8-7.on:after{
+            background: url(${doMain}/images/gouxuan.png) no-repeat center;
+        } */
+
+    </style>
+    <!-- 买单吧分享 start-->
+    <meta name="native" content='[{"title":"分享","action":"share","para":{"title":"看！我竟然出现在了电影海报上！","desc":"2022年度大片正在放映，快来揭晓谁是主角吧！","pageUrl":"${doMainUrl}share?type=${f4!''}&channel=fx","imageUrl":"${doMain}images/share-icon.jpg"}}]'>
+    <!--买单吧分享 end-->
+
+    <!--weixin分享 start-->
+    <meta name="wx-title" content="看！我竟然出现在了电影海报上！"/>
+    <meta name="wx-desc" content="2022年度大片正在放映，快来揭晓谁是主角吧！"/>
+    <meta name="wx-img" content="${doMain}images/share-icon.jpg">
+    <meta name="wx-link" content="${doMainUrl}share?type=${f4!''}&channel=fx">
+    <!--weixin分享 end-->
+
+    <style>
+html {
+	font-size: 50px;
+}
+
+    </style>
+</head>
+<body  style="font-size: 16px;">
+<!--  swiper-no-swiping -->
+
+    <script type="text/template" id="template">
+        <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="page page8">
+                <div class="img img-8-1"><img src="${doMain}images/img-8-1.png" alt=""></div>
+                <div class="img img-8-4 ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="1.8s" swiper-animate-delay="0.8s"><img src="${doMain}images/img-8-4.png" alt=""></div>
+                <div class="img img-8-2"><img src="${doMain}images/img-8-2.png" alt=""></div>
+                <div class="img img-8-3"><img src="${doMain}images/img-8-3.png" alt=""></div>
+                <div class="img img-8-5"><img src="${doMain}images/img-8-5.png" alt=""></div>
+
+                <div class="img img-8-6">
+                    <img src="${doMain}images/img-8-6.png" alt="">
+                    <img src="${doMain}images/img-8-6.gif" alt="" style="display: none">
+                    <div class=" text2">
+                        <!-- 白名单 -->
+                        <p>
+                        <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">人物角色已加载完成……</span>
+                        <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">精彩剧情已加载完成…… </span>
+                        <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">工作人员已准备完毕…… </span>
+                        <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">等等，主角在哪？ </span>
+                        <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">来不及了，电影大片立刻开映！</span>
+                        <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">一起揭晓主角是谁吧！</span>
+                        </p>
+                        <!-- 黑名单 -->
+                        <p>
+
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">不论电影的剧情如何，</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我作为自己生活的主角，</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">更懂得为自己的生活增添更多精彩！</span>
+                        </p>
+                        <!-- 灰名单 -->
+                        <p>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">剧情正在努力加载……</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">作为主角，我需要体验更多精彩生</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">活为剧本提供更多灵感！</span>
+                        </p>
+                        <!-- 绑卡 -->
+                        <p >
+
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">聚光灯下闪闪发光，</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">没错我就是自带主角光环！</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">现在加入，</span>
+                            <span class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">成为下一个票房收割机！</span>
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <div class="btn">
+                    <!-- 白名单 -->
+                    <div class="item">
+                        <div class="img img-8-7"><img class="check-back" src="${doMain}images/img-8-7.png" alt=""/> <img class="check" src="${doMain}images/gouxuan.png" alt=""/> </div>
+                        <div class="img img-8-8 agree off"><img src="${doMain}images/img-8-8.png" alt="" td-event="2821009004"></div>
+                    </div>
+                    <!-- 黑名单 -->
+                    <div class="item">
+                        <div class="img img-8-8"><a href=""><img src="${doMain}images/img-8-8-2.png" alt="" td-event="2821009001"></a></div>
+                    </div>
+                    <!-- 灰名单 -->
+                    <div class="item">
+                        <div class="img img-8-8"><a href=""><img src="${doMain}images/img-8-8-3.png" alt="" td-event="2821009002"></a></div>
+                    </div>
+                    <!-- 绑卡 -->
+                   <div class="item">
+                        <div class="img img-8-8"><a href=""><img src="${doMain}images/img-8-8-1.png" alt="" td-event="2821009003"></a></div>
+                    </div>
+                </div>
+                <div class="img img-8-9"><a href=""><img src="${doMain}images/img8.png" alt=""></a></div>
+            </div>
+        </div>
+        <!-- 全年总消费-->
+        <div class="swiper-slide">
+            <div class="page page9">
+                <div class="img img-9-1  ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0s" swiper-animate-delay="0s"><img src="${doMain}images/bg-9.gif" alt=""></div>
+                <!-- 大于等于70% -->
+                <div class="content">
+                    <div class="text ani" style="display: none;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+
+                        <p>
+                            <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">在这一年里，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我的消费总额是<em class="f1">xxxx</em>元，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">超过了<em class="f2"></em><em>%</em>的卡友。</span>
+                        </p>
+                        <p>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">我是交行信用卡忠实粉，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">消费力杠杠的！</span>
+                        </p>
+                        <p>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">在消费这件事上，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">可以永远相信我的财力！</span>
+                            <span class="ani page9-f3" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s">会花也会赚，全年轻松省下<em class="f3"></em>元。</span>
+                        </p>
+                        <p class="msg">
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s">注：以上金额包含全年尊享刷卡金、红包、积分的总额。</span>
+                        </p>
+                    </div>
+
+                    <!-- 50%-70% -->
+                    <div class="text ani" style="display: none;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+
+                        <p>
+                            <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">在这一年里，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我的消费总额是<em class="f1"></em>元，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">超过了<em class="f2"></em><em>%</em>的卡友。</span>
+                        </p>
+                        <p>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">本人一直在助力经济发展的路上，</span>
+                            <span class="ani page9-f3" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">收获满满的成就感，全年省下<em class="f3"></em>元。</span>
+                        </p>
+                        <p class="msg">
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">注：以上金额包含全年尊享刷卡金、红包、积分的总额。</span>
+                        </p>
+                    </div>
+                    <!-- 20%-50% -->
+                    <div class="text ani" style="display: none;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+
+                        <p>
+                            <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">在这一年里，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我的消费总额是<em class="f1"></em>元，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">超过了<em class="f2"></em><em>%</em>的卡友。</span>
+                        </p>
+                        <p>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">消费平平无奇，惊喜出其不意!</span>
+                            <span class="ani page9-f3" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">全年省下<em class="f3"></em>元。</span>
+                        </p>
+                        <p class="msg">
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">注：以上金额包含全年尊享刷卡金、红包、积分的总额。</span>
+                        </p>
+                    </div>
+                    <!-- 小于20%-->
+                    <div class="text ani" style="display: none;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+
+                        <p>
+                            <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">在这一年里，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我的消费总额是<em class="f1"></em>元，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">超过了<em class="f2"></em><em>%</em>的卡友，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">还有很大的上升空间哟！</span>
+                        </p>
+                        <p>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">低消费也能有高幸福感，</span>
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">还得是给力的交行信用卡！</span>
+                            <span class="ani page9-f3" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">全年省下<em class="f3"></em>元。</span>
+                        </p>
+                        <p class="msg">
+                            <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s">注：以上金额包含全年尊享刷卡金、红包、积分的总额。</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s"><img src="${doMain}images/more.png" alt=""></div>
+            </div>
+        </div>
+        <!-- 分期消费 内页02-->
+        <div class="swiper-slide">
+            <div class="page page18">
+                <div class="img img-18-13"><img src="${doMain}images/img-18-12.gif" alt=""></div>
+                <div class="text ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                    <p>
+                        <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">精彩剧情不等待，</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">享受当下不将就！</span>
+
+                    </p>
+                    <p>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">贴心买单吧，在线帮省钱！</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">全年分期帮我省下<em class="f1"></em>元分期利息。</span>
+
+                    </p>
+                    <p>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">我还领到了<em class="f2"></em></span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">提醒我犒劳还在奋斗中的自己！</span>
+
+                    </p>
+                </div>
+
+                <div class="img img-18-12"><img src="${doMain}images/img-18-12.png" alt=""></div>
+                <div class="img img-18-11"><img src="${doMain}images/img-18-11.png" alt=""></div>
+                <div class="img img-18-1"><img src="${doMain}images/img-18-1.png" alt=""></div>
+                <div class="img img-18-2"><img src="${doMain}images/img-18-2.png" alt=""></div>
+                <div class="img img-18-3"><img src="${doMain}images/img-18-3.png" alt=""></div>
+                <div class="img img-18-4"><img src="${doMain}images/img-18-4.png" alt=""></div>
+                <div class="img img-18-5"><img src="${doMain}images/img-18-5.png" alt=""></div>
+                <div class="img img-18-6"><img src="${doMain}images/img-18-6.png" alt=""></div>
+                <div class="img img-18-7"><img src="${doMain}images/img-18-7.png" alt=""></div>
+                <div class="img img-18-8"><img src="${doMain}images/img-18-8.png" alt=""></div>
+                <div class="img img-18-9"><img src="${doMain}images/img-18-9.png" alt=""></div>
+                <div class="img img-18-10"><img src="${doMain}images/img-18-10.png" alt=""></div>
+
+
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s"><img src="${doMain}images/more.png" alt=""></div>
+            </div>
+        </div>
+        <!-- 餐饮消费 内页03-->
+        <div class="swiper-slide">
+            <div class="page page11">
+            <!-- 日常餐饮+外卖消费 -->
+                <div class="text ani" style="display: none"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.2s" swiper-animate-delay="0.4s">
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">到点吃饭是认真生活的证明！</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">过去的一年里，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">我在餐饮上一共消费了<em class="f1"></em>次，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">共计<em class="f2"></em>元。</span>
+                    </p>
+                    <p>
+
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">仪式感总在餐桌上，</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">在一年中特殊的那个日子里，</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">我吃了最贵的一顿大餐，花费<em class="f3"></em>元。</span>
+
+                    </p>
+                     <p>
+
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s">想偷懒的时候，我也能好好吃饭。</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s">全年我点了<em class="f4"></em>次外卖<b class="dot">，</b></span>
+                        <span class=" ani last-time" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="5s">最晚一笔外卖在<em class="f5"></em>。</span>
+
+                    </p>
+                </div>
+            <!-- 仅日常餐饮消费 -->
+                <div class="text ani"  style="display: none" swiper-animate-effect="fadeIn" swiper-animate-duration="0.2s" swiper-animate-delay="0.2s">
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">到点吃饭是认真生活的证明！</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">过去的一年里，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">我在餐饮上一共消费了<em class="f1"></em>次，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">共计<em class="f2"></em>元。</span>
+                    </p>
+                    <p>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">仪式感总在餐桌上，</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">在一年中特殊的那个日子里，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">我吃了最贵的一顿大餐，花费<em class="f3"></em>元。</span>
+                    </p>
+
+                </div>
+                <!-- 仅外卖 -->
+                <div class="text ani"  style="display: none"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.2s" swiper-animate-delay="0.4s">
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">这一年，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我一共点了<em class="f4"></em>次外卖<b class="dot2">，</b></span>
+                        <span  class=" ani last-time2" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">最晚的一笔外卖消费在<em class="f5"></em>。</span>
+                    </p>
+                    <p>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">新的一年，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">偶尔下馆子奖励下好好生活的自己，</span>
+                        <span  class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">好像也不错!</span>
+                    </p>
+                </div>
+
+
+                <div class="img img-11-1"><img src="${doMain}images/img-11-1.gif" alt=""></div>
+                <div class="img img-11-2 ani"  swiper-animate-effect="slideInRight" swiper-animate-duration="1.2s" swiper-animate-delay=".5s"><img src="${doMain}images/img-11-2.png" alt=""></div>
+                <div class="img img-11-3"><img src="${doMain}images/img-11-3.png" alt=""></div>
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s"><img src="${doMain}images/more.png" alt=""></div>
+            </div>
+        </div>
+        <!-- 生活消费 内页04-->
+        <div class="swiper-slide">
+            <div class="page page2">
+                <div class="text ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.3s" swiper-animate-delay="0.2s">
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay=".5s">柴米油盐酱醋茶，</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">奏响了主角专属的BGM。</span>
+                    </p>
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">逛逛超市，买买小菜，充个话费，</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">缴个水电……件件小事搭建了我的</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">美好生活。</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">我在这里共计消费<em class="f1"></em>元。</span>
+                    </p>
+                    <p>
+
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">把生活过得既有条理又有烟火气，</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s">这是门学问。</span>
+                    </p>
+                </div>
+                <div class="img img1 ani" swiper-animate-effect="slideInUp" swiper-animate-duration="2s" swiper-animate-delay="0.1s"><img src="${doMain}images/car.png" alt=""></div>
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s"><img src="${doMain}images/more.png" alt=""></div>
+            </div>
+        </div>
+        <!-- 买单吧登录 -->
+        <div class="swiper-slide">
+            <div class="page page19">
+                <!-- 全年买单吧登录大于等于30，且刷卡金或红包金额大于10元 -->
+                <div class="text ani"  style="display: none" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                    <p>
+                        <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">一整年的</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">查账还款、充值缴费、活动参与......</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">统统都有买单吧这个小助手帮我轻松搞定！</span>
+
+                    </p>
+                    <p>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">这样的买单吧，谁能不爱？</span>
+
+
+                    </p>
+                    <p>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">我平均每月最少登录<em class="f1"></em>次。</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">我这一年在买单吧使用了<em class="f2"></em>元刷卡金，<em class="f3"></em>元红包。</span>
+
+                    </p>
+                </div>
+                <!-- 全年买单吧登录低于30，有刷卡金或红包金额 -->
+                <div class="text ani" style="display: none" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                    <p>
+                        <span  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">啊哦，</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">今年我好像不小心冷落了买单吧，</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">我平均每月仅登录<em class="f1"></em>次。</span>
+
+                    </p>
+                    <p>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">立个FLAG,</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s">明年我要与买单吧多多互动，</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">查账还款、充值缴费、活动参与......</span>
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">开启更美好的生活！</span>
+
+                    </p>
+
+                </div>
+                <div class="img img-19-1 "><img src="${doMain}images/load-1.png" alt=""></div>
+                <div class="img  img-19-2 "><img src="${doMain}images/img-19-2.png" alt=""></div>
+
+                <div class="img  img-19-4 "><img src="${doMain}images/img-19-4.png" alt=""></div>
+                <div class="img  img-19-5 "><img src="${doMain}images/img-19-5.png" alt=""></div>
+                <div class="img  img-19-6 "><img src="${doMain}images/img-19-6.png" alt=""></div>
+                <div class="img  img-19-7 "><img src="${doMain}images/img-19-7.png" alt=""></div>
+                <div class="img  img-19-8 "><img src="${doMain}images/img-19-8.png" alt=""></div>
+                <div class="img  img-19-9 "><img src="${doMain}images/img-19-9.png" alt=""></div>
+                 <div class="img  img-19-3 "><img src="${doMain}images/img-19-3.png" alt=""></div>
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s"><img src="${doMain}images/more.png" alt=""></div>
+            </div>
+        </div>
+        <!-- 活动参与 已参加  -->
+        <div class="swiper-slide">
+            <div class="page page13">
+                <div class="img img-13-4"><img src="${doMain}images/img-13-4.png" alt=""></div>
+                <div class="img img-13-5"><img src="${doMain}images/img-13-5.png" alt=""></div>
+                <div class="img img-13-6"><img src="${doMain}images/img-13-6.png" alt=""></div>
+
+                <div class="img img-13-8"><img src="${doMain}images/img-13-8.png" alt=""></div>
+                <div class="img img-13-9"><img src="${doMain}images/img-13-9.png" alt=""></div>
+                <div class="img img-13-10"><img src="${doMain}images/img-13-10.png" alt=""></div>
+                <div class="img img-13-11"><img src="${doMain}images/img-13-11.png" alt=""></div>
+                <div class="img img-13-12"><img src="${doMain}images/img-13-12.png" alt=""></div>
+                <div class="img img-13-13"><img src="${doMain}images/img-13-13.png" alt=""></div>
+                <div class="img img-13-14"><img src="${doMain}images/img-13-14.png" alt=""></div>
+                <div class="img img-13-15" style="z-index: 999;"><img src="${doMain}images/img-13-15.png" alt=""></div>
+                <div class="img img-13-7"><img src="${doMain}images/img-13-7.png" alt=""></div>
+                <div class="img img-13-1"><img src="${doMain}images/img-13-1.gif" alt=""></div>
+                <div class="img img-13-2"><img src="${doMain}images/img-13-2.png" alt=""></div>
+                <div class="img img-13-3"><img src="${doMain}images/img-13-1.png" alt=""></div>
+                <div class="text ani"   swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                    <p>
+                       <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay=".5s">过去的一年，</span>
+                       <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我在以下活动赚够了开心，</span>
+                       <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">拿足了奖励！</span>
+                    </p>
+                    <p>
+
+                       <span class="page13-f1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">最红星期五活动我平均每月参加</span>
+                       <span class="page13-f1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s"><em class="f1"></em>次，一共省下<em class="f2"></em>元</span>
+                       <span class="page13-f3 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">618活动我获得<em class="f3"></em>元优惠</span>
+                       <span class="page13-f4 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.5s">周周刷活动我获得<em class="f4"></em>块金砖</span>
+                       <span class="page13-f5 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s">笔笔返活动我平均每天开<em class="f5"></em>次宝箱</span>
+                    </p>
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4.5s">真参与才敢说真话：真的好划算！</span>
+                    </p>
+                </div>
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s"><img src="${doMain}images/more.png" alt=""></div>
+            </div>
+        </div>
+        <!-- 活动参与  只消费未参加活动客户引导参与最红活动-->
+        <div class="swiper-slide">
+            <div class="page page20">
+                <div class="img img-20-4"><img src="${doMain}images/img-20-4.png" alt=""></div>
+                <div class="img img-20-3"><img class="img-20-3-innerimg" src="${doMain}images/img-20-3.png" alt=""></div>
+                <div class="img img-20-5"><img src="${doMain}images/img-20-5.png" alt=""></div>
+                <div class="img img-20-6"><img src="${doMain}images/img-20-6.png" alt=""></div>
+                <div class="img img-20-7"><img src="${doMain}images/img-20-7.png" alt=""></div>
+                <div class="img img-20-8"><img src="${doMain}images/img-20-8.png" alt=""></div>
+                <div class="img img-20-15"><img src="${doMain}images/img-20-8.png" alt=""></div>
+                <div class="img img-20-9"><img src="${doMain}images/img-20-9.png" alt=""></div>
+                <div class="img img-20-10"><img src="${doMain}images/img-20-10.png" alt=""></div>
+                <div class="img img-20-11"><img src="${doMain}images/img-20-11.png" alt=""></div>
+                <div class="img img-20-12"><img src="${doMain}images/img-20-12.png" alt=""></div>
+                <div class="img img-20-13"><img src="${doMain}images/img-20-13.png" alt=""></div>
+                 <div class="img img-20-1"><img src="${doMain}images/img-20-1.png" alt=""></div>
+                <div class="img img-20-2"><img src="${doMain}images/img-20-2.png" alt=""></div>
+                <div class="text ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                    <p>
+                       <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay=".5s">哇 感觉错过了一个亿，</span>
+                       <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">原来省钱是这么爽的吗？</span>
+                    </p>
+                    <p>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"> 参与最红星期五活动，</span>
+                       <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">汽车加油、外卖生鲜、餐饮美食......</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.5s"> 周周可享优惠！</span>
+                        <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s">省钱自由这不就直接实现了！</span>
+
+                    </p>
+                </div>
+                <div class="more ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="4s"><img src="${doMain}images/more.png" alt=""></div>
+
+            </div>
+        </div>
+        <!-- 生成页面 -->
+        <div class="swiper-slide">
+            <div class="page page17">
+                <div class="load2">
+                    <div class="img load-1">
+                        <img src="${doMain}images/load-1.png" alt="">
+                    </div>
+                    <div class="img load-2">
+                        <img src="${doMain}images/load-2.png" alt="">
+                    </div>
+                    <div class="content">
+
+                        <div class="text3">
+                            <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay=".1s">
+                                2022的精彩大片因我而独特！
+                            </span>
+                            <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay=".6s">
+                                最佳主角，非我莫属！
+                            </span>
+                            <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.1s">
+                                我的专属海报正在生成，
+                            </span >
+                            <span class=" ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s">
+                                都有些迫不及待分享给我的影迷们啦!
+                            </span>
+                        </div>
+                        <img class="t" src="${doMain}images/load-6.png" alt="">
+                        <div class="speed2">
+                            <img src="${doMain}images/load-4.png" alt="">
+                            <em></em>
+                        </div>
+                        <img class="t" src="${doMain}images/load-5.png" alt="">
+
+                    </div>
+                </div>
+
+                <div class="img img-17-2">
+                    <img src="${doMain}images/share-2.png" alt="">
+                </div>
+                <div class="img img-17-4">
+                    <img src="${doMain}images/share-3.png" alt="">
+                </div>
+
+                <div class="img img-17-1">
+                    <img src="${doMain}images/share-1.png" alt="">
+                </div>
+                <img class="img share-box" src="${doMain}images/share.jpg" alt="">
+                <div class="img share-btn">
+                    <img src="${doMain}images/share-btn.png" alt="" td-event="2821010001">
+                </div>
+                <div class="mask">
+                    <div class="img img-17-3">
+                        <img src="${doMain}images/img-17-2.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+    </div>
+    </script>
+    <script src="${doMain}js/main.js?t=2022120502"></script>
+    <script>
+			var doMain = "${doMain!''}"
+            var doMainUrl = "${doMainUrl!''}"
+			var links = ${links!''};
+             var loadt='',loadt2='',imgs,imgLen,obj;
+             var isGrantAuth = "${isGrantAuth!''}";
+             var getData= ${newBizData!''};
+             var playmp3 = localStorage.getItem("mp3");
+             var html=`<div class="load">
+
+                    <div class="content">
+                        <img src="${doMain}images/load-3.png" class="load-img" alt="">
+                        <div class="speed">
+                            <img src="${doMain}images/load-4.png" alt="">
+                            <em style="width:0;"></em>
+                        </div>
+                        <div class="speed-text">
+                            0%
+                        </div>
+                    </div>
+                </div>
+                <audio loop="loop"  src="${doMain}mp3/mp3.mp3" id="play" style="display: none;">
+                </audio>
+                <img class="mp3" src="${doMain}images/mp3.png" style="display: none;">`
+            $('body').prepend(html);
+
+             $('.load').css("display",'flex')
+             obj=$($("#template").html());
+
+            // ajax获取数据
+            $.ajax({
+              type : "get",
+              url : 'http://test102.tengsheji.com/bizData.php', //####修改数据连接
+              data : '',
+              async : false,
+              jsonp: "callback",
+              dataType:'json',
+              success : function(res){
+              getData=res
+
+                    bindData();//绑定数据
+
+
+                }
+        　　});
+        //ajax获取数据 end
+    </script>
+
+
+        <!-- 自定义 js 引用:需要微信分享时引入weixin-share.js  -->
+        <script src="/content/dam/phone/new/common/js/weixin-share.js"></script>
+
+        <!-- 埋点引入js  -->
+        <script type="text/javascript" src="https://creditcard.bankcomm.com/etc/designs/pccc/shared/clientlibs/js/gzcj_02.js"></script>
+
+        <!-- end 自定义 js 引用 -->
+</body>
+</html>

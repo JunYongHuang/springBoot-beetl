@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750,user-scalable=no,target-densitydpi=device-dpi, viewport-fit=cover">
+    <title>2022年交通银行信用卡年度账单</title>
+
+    <link rel="stylesheet" href="${doMain}css/style.css">
+    <script src="${doMain}js/jquery-3.6.0.min.js"></script>
+    
+    <!-- 买单吧分享 start-->
+    <meta name="native" content='[{"title":"分享","action":"share","para":{"title":"看！我竟然出现在了电影海报上！","desc":"2022年度大片正在放映，快来揭晓谁是主角吧！","pageUrl":"${doMainUrl}share?type=${f4!''}&channel=fx","imageUrl":"${doMain}images/share-icon.jpg"}}]'>
+    <!--买单吧分享 end-->
+
+    <!--weixin分享 start-->
+    <meta name="wx-title" content="看！我竟然出现在了电影海报上！"/>
+    <meta name="wx-desc" content="2022年度大片正在放映，快来揭晓谁是主角吧！"/>
+    <meta name="wx-img" content="${doMain}images/share-icon.jpg">
+    <meta name="wx-link" content="${doMainUrl}share?type=${f4!''}&channel=fx">
+    <!--weixin分享 end-->
+
+    <script>
+        //上线前不知道地址，采用动态设置分享地址和图片 方案   ===分享不需要手动设置，请不要修改下面代码===   BEGIN
+        var myUrl = window.location.href;
+        var shareUrl = myUrl.split("?")[0];
+
+        var _rootUrl = shareUrl.substring(0, shareUrl.lastIndexOf("/"));
+
+        var shareUrl = _rootUrl+'/share.html';
+
+        var shareIcon = _rootUrl + "/images/share.jpg";
+        var shareTitle = $('meta[name="wx-title"]').attr('content');
+        var shareDesc = $('meta[name="wx-desc"]').attr('content');
+        
+        var nativeContent = '[{"title":"分享","action":"share","para":{"title":"'+shareTitle+'","desc":"'+shareDesc+'","pageUrl":"'+shareUrl+'","imageUrl":"'+shareIcon+'"}}]';
+        $('meta[name="native"]').attr('content',nativeContent);
+
+        $('meta[name="wx-link"]').attr('content',shareUrl);
+
+        $('meta[name="wx-img"]').attr('content',shareIcon);
+
+        var channel = "${channel!''}"
+
+        //上线前不知道地址，采用动态设置分享地址和图片 方案   ===分享不需要手动设置，请不要修改上面代码===   END
+    </script>
+    <style>
+        html{font-size: 50px;}
+    </style>
+</head>
+<body  style="font-size: 16px;">
+
+    
+    <script type="text/javascript">
+
+        var html=`<div class="page page17">
+        <div class="img img-17-2">
+            <img src="${doMain}images/share-2.png" alt="">
+        </div>
+        <div class="img img-17-4">
+            <img src="${doMain}images/share-3.png" alt="">
+        </div>
+        
+        <div class="img img-17-1">
+            <img src="${doMain}images/share-1.png" alt="">
+        </div> 
+
+        <img class="share-box" alt="">
+        
+        <div class="img share-btn">
+            <a href="${doMainUrl}/landing?channel=${channel}"><img src="${doMain}images/share-look.png" alt=""></a>
+        </div>
+    </div>`
+            $('body').prepend(html);
+
+              // 根据type参数拼接素材地址
+        const typeParam = GetQueryString('type')
+        const assetUrl = typeParam ? (typeParam +'.jpg') : 'share.jpg'
+
+        $(".share-box").attr('src','${doMain}'+'share/'+assetUrl)
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+            var context = "";
+            if (r != null)
+            context = r[2];
+            reg = null;
+            r = null;
+            return context == null || context == "" || context == "undefined" ? "" : context;
+        }
+    </script>
+    <!-- 自定义 js 引用:需要微信分享时引入weixin-share.js  -->
+        <script src="/content/dam/phone/new/common/js/weixin-share.js"></script>
+
+      <!-- 埋点引入js  -->
+    <script type="text/javascript" src="https://creditcard.bankcomm.com/etc/designs/pccc/shared/clientlibs/js/gzcj_02.js"></script>
+
+        <script>
+            $('.share-btn img').click(function(){
+                try{
+                    window.TDAPP.onEvent("2821011001","开启年度账单",{url:"${doMainUrl}/landing?channel=${channel}"});
+                    if(typeof SRSAPP != "undefiend" && SRSAPP.onEvent){
+                        window.SRSAPP.onEvent("2821011001","开启年度账单",{url:"${doMainUrl}/landing?channel=${channel}"})
+                    }
+                }catch(e){
+                    console.log(e)
+                }
+            })
+        </script>
+        <!-- end 自定义 js 引用 -->
+
+</body>
+</html>
